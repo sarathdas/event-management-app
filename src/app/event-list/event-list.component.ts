@@ -59,10 +59,6 @@ export class EventListComponent implements OnInit {
     });
   }
 
-  filterByDate() {
-    // This method can be used to trigger any additional logic when the date changes
-  }
-
   clearFilters() {
     this.searchTerm = '';
     this.selectedDate = null;
@@ -73,12 +69,10 @@ export class EventListComponent implements OnInit {
     this.eventService.deleteEvent(id);
   }
 
-  // Method to update the search term
   updateSearchTerm(term: string) {
     this.searchTerm = term;
   }
 
-  // Method to update the selected date
   updateSelectedDate(date: Date | null) {
     this.selectedDate = date;
   }
