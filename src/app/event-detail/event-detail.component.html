@@ -1,0 +1,15 @@
+<div *ngIf="event" class="event">
+  <div class="event-header">
+    <h3>{{ event.title }}</h3>
+    <p>{{ event.date }} - {{ event.location }}</p>
+  </div>
+  <div class="row event-body">
+    <div class="col-md-12 event-description">
+      <p>{{ event.description }}</p>
+    </div>
+  </div>
+
+  <button class="btn btn-secondary" (click)="goBack()">
+    Back to Event List
+  </button>
+</div>
